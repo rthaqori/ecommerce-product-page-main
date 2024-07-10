@@ -37,7 +37,7 @@ function generateCartHTML() {
             <div class="item">
               <img src="images/image-product-1.jpg" alt="">
               <div class="cart-item-info">
-                <span id="item-name">${cart[0].itemName}</span>
+                <span id="item-name">${cart.itemName}</span>
                 <div class="price-info">
                   <span id="item-price">$${cart[0].price}</span>
                   <span>x</span>
