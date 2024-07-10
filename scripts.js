@@ -63,6 +63,7 @@ document.querySelector(".cart")
 
 const imageList = document.querySelectorAll(".image-lists img");
 
+
 imageList.forEach((img) => {
     img.addEventListener("mouseover", () => {
         imageList.forEach((image) => {
@@ -71,20 +72,9 @@ imageList.forEach((img) => {
 
         img.classList.add("active");
 
-        if (img.classList.contains("active")) {
-            const src = img.src;
-            const productImage = document.querySelector(".image-container img");
-
-            if (src === "http://127.0.0.1:5500/images/image-product-1-thumbnail.jpg") {
-                productImage.src = "http://127.0.0.1:5500/images/image-product-1.jpg"
-            } else if (src === "http://127.0.0.1:5500/images/image-product-2-thumbnail.jpg") {
-                productImage.src = "http://127.0.0.1:5500/images/image-product-2.jpg"
-            } else if (src === "http://127.0.0.1:5500/images/image-product-3-thumbnail.jpg") {
-                productImage.src = "http://127.0.0.1:5500/images/image-product-3.jpg"
-            } else if (src === "http://127.0.0.1:5500/images/image-product-4-thumbnail.jpg") {
-                productImage.src = "http://127.0.0.1:5500/images/image-product-4.jpg"
-            }
-        }
+        const src = img.src;
+        const productImage = document.querySelector(".image-container img");
+        productImage.src = src.replace('-thumbnail', '');
     });
 });
 
@@ -152,10 +142,10 @@ document.querySelector(".image-container img").addEventListener("click", () => {
 });
 
 document.querySelector(".toggle-menu")
-.addEventListener("click", () => {
-    document.querySelector(".nav-list").classList.add("active");
+    .addEventListener("click", () => {
+        document.querySelector(".nav-list").classList.add("active");
 
-    document.querySelector(".close").addEventListener("click",()=>{
-        document.querySelector(".nav-list").classList.remove("active");
+        document.querySelector(".close").addEventListener("click", () => {
+            document.querySelector(".nav-list").classList.remove("active");
+        });
     });
-});
