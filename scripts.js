@@ -29,8 +29,6 @@ function addCart(itemName, quantity, price) {
     saveToStorage();
 }
 
-document.querySelector(".cart-quantity").innerText = cart[0].quantity;
-
 function generateCartHTML() {
     let cartHTML = "";
     cart.forEach(element => {
