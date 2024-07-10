@@ -83,7 +83,7 @@ imageList.forEach((img) => {
                 productImage.src = "image-product-2.jpg"
             } else if (src === "image-product-3-thumbnail.jpg") {
                 productImage.src = "image-product-3.jpg"
-            } else {
+            } else if (src === "image-product-4-thumbnail.jpg") {
                 productImage.src = "image-product-4.jpg"
             }
         }
