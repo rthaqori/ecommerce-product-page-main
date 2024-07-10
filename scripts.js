@@ -77,14 +77,14 @@ imageList.forEach((img) => {
             const src = img.src;
             const productImage = document.querySelector(".image-container img");
 
-            if (src === "image-product-1-thumbnail.jpg") {
-                productImage.src = "image-product-1.jpg"
-            } else if (src === "image-product-2-thumbnail.jpg") {
-                productImage.src = "image-product-2.jpg"
-            } else if (src === "image-product-3-thumbnail.jpg") {
-                productImage.src = "image-product-3.jpg"
-            } else if (src === "image-product-4-thumbnail.jpg") {
-                productImage.src = "image-product-4.jpg"
+            if (src === "http://127.0.0.1:5500/images/image-product-1-thumbnail.jpg") {
+                productImage.src = "http://127.0.0.1:5500/images/image-product-1.jpg"
+            } else if (src === "http://127.0.0.1:5500/images/image-product-2-thumbnail.jpg") {
+                productImage.src = "http://127.0.0.1:5500/images/image-product-2.jpg"
+            } else if (src === "http://127.0.0.1:5500/images/image-product-3-thumbnail.jpg") {
+                productImage.src = "http://127.0.0.1:5500/images/image-product-3.jpg"
+            } else if (src === "http://127.0.0.1:5500/images/image-product-4-thumbnail.jpg") {
+                productImage.src = "http://127.0.0.1:5500/images/image-product-4.jpg"
             }
         }
     });
